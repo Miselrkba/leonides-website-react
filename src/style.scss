@@ -1,12 +1,28 @@
-$font-stack: Trebuchet MS, sans-serif;
-$gold-color: #ffd700;
-$white-color: black;
+@font-face {
+  font-family: 'MostraNuova-Regular';
+  src: url(./assets/fonts/MostraNuova-Regular.woff);
+}
+@font-face {
+  font-family: 'Myriad-Pro-Regular';
+  src: url(./assets/fonts/MyriadPro-Regular.woff);
+}
+
+$primary-font: MostraNuova-Regular;
+$secondary-font: Myriad-Pro-Regular;
+$gold-color: #af9a7d;
+$mainWhite: #fff;
+$offWhite: #f7f7f7;
+$mainBlack: #222;
+$mainGrey: #ececec;
+$darkGrey: #cfcfcf;
+$mainTransition: all 0.3s linear;
+$mainSpacing: 3px;
+$lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+$darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 
 // @use './components/banner/banner';
 
 @mixin testMixin() {
-  font: 100% $font-stack;
-  color: $white-color;
 }
 
 %panel {
@@ -18,15 +34,15 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  background: url(./assets/images/svg/bg-black.svg) no-repeat;
+  background-size: cover;
+  @include testMixin();
+  font-family: $secondary-font;
 }
 
 .small-panel {
   @extend %panel;
   font-size: 1.5em;
-}
-
-body {
-  @include testMixin();
 }
 
 h1 {
