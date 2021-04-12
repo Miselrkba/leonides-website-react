@@ -7,6 +7,8 @@
   src: url(./assets/fonts/MyriadPro-Regular.woff);
 }
 
+// *******VARIABLES********
+
 $primary-font: MostraNuova-Regular;
 $secondary-font: Myriad-Pro-Regular;
 $gold-color: #af9a7d;
@@ -19,6 +21,11 @@ $mainTransition: all 0.3s linear;
 $mainSpacing: 3px;
 $lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
 $darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+
+// *********MAIN STYLES********
+.gold--color {
+  color: $gold-color;
+}
 
 // @use './components/banner/banner';
 
@@ -37,7 +44,7 @@ body {
   background: url(./assets/images/svg/bg-black.svg) no-repeat;
   background-size: cover;
   @include testMixin();
-  font-family: $secondary-font;
+  font-family: $secondary-font, sans-serif;
 }
 
 .small-panel {
@@ -61,5 +68,34 @@ h1 {
 
   &--green {
     color: green;
+  }
+}
+
+// ***********NAVBAR*************
+.navbar__ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  cursor: pointer;
+  padding: 1em;
+}
+
+.navbar__ul__li__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3em;
+}
+
+// ***********HERO*************
+#hero {
+  // width: 80vw;
+  height: 100vh;
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 75vh;
+    font-weight: lighter;
   }
 }

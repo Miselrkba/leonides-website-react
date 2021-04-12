@@ -2,8 +2,8 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <div>
-      <h1>Hero</h1>
+    <div id="hero">
+      <h1 className="gold--color">SINE METU</h1>
     </div>
   );
 };
