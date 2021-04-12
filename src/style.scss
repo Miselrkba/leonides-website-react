@@ -72,23 +72,42 @@ h1 {
 }
 
 // ***********NAVBAR*************
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 .navbar__ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  cursor: pointer;
   padding: 1em;
+
+  li {
+    border-top: 1px solid $gold-color;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    width: 3%;
+    cursor: pointer;
+  }
 }
 
 .navbar__ul__li__container {
   display: flex;
   flex-direction: column;
   padding: 0 3em;
+  position: relative;
+  top: -1em;
+  img {
+    cursor: pointer;
+  }
+  li {
+    border: none;
+  }
 }
 
 // ***********HERO*************
 #hero {
-  // width: 80vw;
   height: 100vh;
   h1 {
     display: flex;
