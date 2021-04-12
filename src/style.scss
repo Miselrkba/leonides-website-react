@@ -3,14 +3,41 @@
   src: url(./assets/fonts/MostraNuova-Regular.woff);
 }
 @font-face {
+  font-family: 'MostraNuova-Light';
+  src: url(./assets/fonts/MostraNuova-Light.woff);
+}
+
+@font-face {
+  font-family: 'MostraNuova-Bold';
+  src: url(./assets/fonts/MostraNuova-Bold.woff);
+}
+
+@font-face {
   font-family: 'Myriad-Pro-Regular';
   src: url(./assets/fonts/MyriadPro-Regular.woff);
+}
+@font-face {
+  font-family: 'Myriad-Pro-Light';
+  src: url(./assets/fonts/MyriadPro-Light.woff);
+}
+@font-face {
+  font-family: 'Myriad-Pro-LightIt';
+  src: url(./assets/fonts/MyriadPro-LightIt.woff);
+}
+@font-face {
+  font-family: 'Myriad-Pro-It';
+  src: url(./assets/fonts/MyriadPro-It.woff);
 }
 
 // *******VARIABLES********
 
 $primary-font: MostraNuova-Regular;
+$primary-font-bold: MostraNuova-Bold;
+$primary-font-light: MostraNuova-Light;
 $secondary-font: Myriad-Pro-Regular;
+$secondary-font-light: Myriad-Pro-Light;
+$secondary-font-lightIt: Myriad-Pro-LightIt;
+$secondary-font-It: Myriad-Pro-It;
 $gold-color: #af9a7d;
 $mainWhite: #fff;
 $offWhite: #f7f7f7;
@@ -138,4 +165,14 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  h2 {
+    font-family: $primary-font-bold;
+    margin-bottom: -0.4em;
+  }
+  p {
+    font-family: $secondary-font-light;
+    font-size: 0.7em;
+    font-weight: bolder;
+    letter-spacing: 0.1em;
+  }
 }
