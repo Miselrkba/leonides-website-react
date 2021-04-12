@@ -1,33 +1,4 @@
-@font-face {
-  font-family: 'MostraNuova-Regular';
-  src: url(./assets/fonts/MostraNuova-Regular.woff);
-}
-@font-face {
-  font-family: 'MostraNuova-Light';
-  src: url(./assets/fonts/MostraNuova-Light.woff);
-}
-
-@font-face {
-  font-family: 'MostraNuova-Bold';
-  src: url(./assets/fonts/MostraNuova-Bold.woff);
-}
-
-@font-face {
-  font-family: 'Myriad-Pro-Regular';
-  src: url(./assets/fonts/MyriadPro-Regular.woff);
-}
-@font-face {
-  font-family: 'Myriad-Pro-Light';
-  src: url(./assets/fonts/MyriadPro-Light.woff);
-}
-@font-face {
-  font-family: 'Myriad-Pro-LightIt';
-  src: url(./assets/fonts/MyriadPro-LightIt.woff);
-}
-@font-face {
-  font-family: 'Myriad-Pro-It';
-  src: url(./assets/fonts/MyriadPro-It.woff);
-}
+@use '_fonts';
 
 // *******VARIABLES********
 
@@ -165,6 +136,8 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background: url(./assets/images/svg/header-about.svg) no-repeat center;
+  padding-top: 2em;
   h2 {
     font-family: $primary-font-bold;
     margin-bottom: -0.4em;
