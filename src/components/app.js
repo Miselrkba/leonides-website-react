@@ -5,6 +5,7 @@ import Footer from './footer';
 import Gallery from './gallery';
 import Google from './google';
 import Hero from './hero';
+import Logo from './logo';
 import Main from './main';
 import Navbar from './navbar';
 
@@ -13,6 +14,7 @@ const App = () => {
     <div className="app">
       <Navbar />
       <Hero />
+      <Logo />
       <About />
       <Gallery />
       <Main />
