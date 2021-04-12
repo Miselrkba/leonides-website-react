@@ -29,8 +29,6 @@ ul {
   list-style: none;
 }
 
-// @use './components/banner/banner';
-
 @mixin testMixin() {
 }
 
@@ -52,25 +50,6 @@ body {
 .small-panel {
   @extend %panel;
   font-size: 1.5em;
-}
-
-h1 {
-  &:hover {
-    color: $gold-color;
-  }
-}
-
-.btn {
-  display: inline-block;
-  padding: 0.5em 0.7em;
-
-  &--red {
-    color: red;
-  }
-
-  &--green {
-    color: green;
-  }
 }
 
 // ***********NAVBAR*************
@@ -139,15 +118,15 @@ h1 {
   align-items: center;
   background: url(./assets/images/svg/header-about.svg) no-repeat center;
   padding-top: 2em;
-  h2 {
+  h1 {
     font-family: $primary-font-bold;
     margin-bottom: -0.4em;
   }
   p {
     font-family: $secondary-font-light;
-    font-size: 0.7em;
+    font-size: 1em;
     font-weight: bolder;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.3em;
   }
 }
 
@@ -226,7 +205,7 @@ h1 {
   }
 }
 
-// ***********ABOUT*************
+// ***********GALLERY*************
 
 .gallery__image1 {
   grid-area: image1;
@@ -256,5 +235,35 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+// ***********HEAD*************
+#head {
+  img {
+    max-width: 24%;
+  }
+}
+// ***********MAIN*************
+#main {
+  background: url(./assets/images/svg/bg-offer.svg) no-repeat;
+  background-size: cover;
+  height: 200vh;
+}
+
+.main__heading__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2em;
+  h1 {
+    font-family: $primary-font-bold;
+    margin-bottom: -0.4em;
+  }
+  p {
+    font-family: $secondary-font-light;
+    font-size: 1em;
+    font-weight: bolder;
+    letter-spacing: 0.3em;
   }
 }

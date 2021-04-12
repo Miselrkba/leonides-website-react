@@ -4,6 +4,7 @@ import Contact from './contact';
 import Footer from './footer';
 import Gallery from './gallery';
 import Google from './google';
+import Head from './head';
 import Hero from './hero';
 import Logo from './logo';
 import Main from './main';
@@ -17,6 +18,7 @@ const App = () => {
       <Logo />
       <About />
       <Gallery />
+      <Head />
       <Main />
       <Google />
       <Contact />
