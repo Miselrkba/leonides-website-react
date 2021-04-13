@@ -28,3 +28,5 @@ const App = () => {
 };
 
 export default App;
+
+console.log(process.env);
