@@ -29,6 +29,10 @@ ul {
   list-style: none;
 }
 
+.italic--font {
+  font-family: $secondary-font-It;
+}
+
 @mixin testMixin() {
 }
 
@@ -273,10 +277,9 @@ body {
   opacity: 0.6;
 }
 
-.head__circles__img {
-}
 // ***********MAIN*************
 #main {
+  padding-top: 10em;
   background: url(./assets/images/svg/bg-offer.svg) no-repeat;
   background-size: cover;
   height: 200vh;
@@ -286,6 +289,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: url(./assets/images/svg/header-need.svg) no-repeat center;
   padding-top: 2em;
   h1 {
     font-family: $primary-font-bold;
@@ -296,5 +300,79 @@ body {
     font-size: 1em;
     font-weight: bolder;
     letter-spacing: 0.3em;
+  }
+}
+
+.main__grid {
+  img {
+    border-radius: 50%;
+    border: 3px solid $gold-color;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.main__grid__item1 {
+  grid-area: item1;
+  margin: 0 auto;
+}
+.main__grid__item2 {
+  grid-area: item2;
+  margin: 0 auto;
+}
+.main__grid__item3 {
+  grid-area: item3;
+  margin: 0 auto;
+}
+.main__grid__item4 {
+  grid-area: item4;
+  margin: 0 auto;
+}
+.main__grid__item5 {
+  grid-area: item5;
+}
+.main__grid__item6 {
+  grid-area: item6;
+}
+.main__grid__item7 {
+  grid-area: item7;
+}
+.main__grid__item8 {
+  grid-area: item8;
+}
+
+.main__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    'item1 item2 item3 item4'
+    'item5 item6 item7 item8';
+  max-width: 64em;
+  margin: 0 auto;
+  gap: 1em;
+  padding: 1em;
+  padding-bottom: 2em;
+  padding-top: 2em;
+  text-align: center;
+  h3 {
+    color: $gold-color;
+    border-bottom: 3px solid $gold-color;
+  }
+}
+
+.main__text__container {
+  max-width: 64em;
+  padding: 1em;
+  margin: 0 auto;
+  text-align: justify;
+  article {
+    padding-bottom: 2em;
+  }
+  h3 {
+    margin-bottom: 0.3em;
+    font-size: 1.5em;
+    color: $gold-color;
+    font-family: $primary-font-light;
   }
 }
