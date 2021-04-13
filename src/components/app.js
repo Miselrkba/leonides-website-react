@@ -3,7 +3,7 @@ import About from './about';
 import Contact from './contact';
 import Footer from './footer';
 import Gallery from './gallery';
-import Google from './google';
+import Maps from './maps';
 import Head from './head';
 import Hero from './hero';
 import Logo from './logo';
@@ -20,7 +20,7 @@ const App = () => {
       <Gallery />
       <Head />
       <Main />
-      <Google />
+      <Maps />
       <Contact />
       <Footer />
     </div>
@@ -28,5 +28,3 @@ const App = () => {
 };
 
 export default App;
-
-console.log(process.env);
