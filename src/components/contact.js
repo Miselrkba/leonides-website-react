@@ -2,6 +2,7 @@ import React from 'react';
 import ornamentImg from '../assets/images/svg/ornament.svg';
 import menuImg from '../assets/images/svg/menu.svg';
 import circleContactImg from '../assets/images/svg/bg-contact-circles.svg';
+import ContactForm from './contactForm';
 
 const Contact = () => {
   return (
@@ -18,7 +19,6 @@ const Contact = () => {
           <p>LEONIDES</p>
           <img src={ornamentImg} alt="ornament" />
         </div>
-
         <div className="contact__container">
           <h4>
             <span className="gold--color">ADRESA</span>{' '}
@@ -33,6 +33,7 @@ const Contact = () => {
             <span>SPARTA, GRÉCKO</span>{' '}
           </h4>
         </div>
+        <ContactForm />
       </div>
     </>
   );
