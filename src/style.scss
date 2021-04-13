@@ -433,14 +433,31 @@ body {
 
 // ***********CONTACT FORM*************
 #contactForm {
+  padding-top: 2em;
   input {
     border-top-style: none;
     border-right-style: none;
     border-left-style: none;
     border-bottom: 2px solid $gold-color;
-    background-color: #eee;
+    background: none;
+    font-family: $primary-font;
+    padding: 1em;
+  }
+
+  input[type='textarea'] {
+    padding-bottom: 7.6em;
+    padding-right: 80%;
+    border: 2px solid #af9a7d;
+  }
+  button {
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid $gold-color;
+    width: 100%;
   }
 }
+
 .contactForm__container__main {
   grid-area: main;
   display: flex;
@@ -452,6 +469,8 @@ body {
 }
 
 .contactForm__container__button {
+  display: flex;
+  justify-content: center;
   grid-area: button;
 }
 .contactForm__container {

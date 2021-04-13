@@ -8,7 +8,7 @@ const ContactForm = () => (
         meno: 'MENO',
         email: 'EMAIL',
         telefon: 'TELEFÓN',
-        odkaz: 'ODKAZ',
+        odkaz: 'ODKAZ...',
       }}
       validate={(values) => {
         const errors = {};
