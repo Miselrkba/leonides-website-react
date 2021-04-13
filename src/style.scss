@@ -382,4 +382,48 @@ body {
 .leaflet-container {
   width: 100%;
   height: 60vh;
+  margin: 1px 0;
+}
+
+// ***********CONTACT*************
+#contact {
+  background: url(./assets/images/svg/bg-contact.svg) no-repeat;
+  background-size: cover;
+  height: 150vh;
+  padding-top: 5em;
+  margin-top: 5%;
+}
+
+.contact__circle__img {
+  position: absolute;
+  width: 100%;
+  opacity: 0.6;
+  z-index: -1;
+  right: 18%;
+}
+
+.contact__heading__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url(./assets/images/svg/header-contact.png) no-repeat center;
+  padding-top: 9em;
+  h1 {
+    font-family: $primary-font-bold;
+    margin-bottom: -0.4em;
+  }
+  p {
+    font-family: $secondary-font-light;
+    font-size: 1em;
+    font-weight: bolder;
+    letter-spacing: 0.3em;
+  }
+}
+
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: $primary-font-bold;
 }
