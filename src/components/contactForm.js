@@ -14,7 +14,7 @@ const ContactForm = () => (
       validationSchema={Yup.object({
         meno: Yup.string().required('Toto pole musí byť vyplnené'),
         email: Yup.string()
-          .email('Invalid email address')
+          .email('Nesprávny formát emailovej adresy')
           .required('Toto pole musí byť vyplnené'),
         telefon: Yup.number()
           .required('Toto pole musí byť vyplnené')
@@ -33,35 +33,41 @@ const ContactForm = () => (
     >
       {({ isSubmitting }) => (
         <Form className="contactForm__container">
-          <div className="contactForm__container__main">
-            <Field type="name" name="meno" placeholder="MENO" />
-            <ErrorMessage
-              name="meno"
-              component="div"
-              style={{ color: 'red' }}
-            />
-            <Field type="email" name="email" placeholder="EMAIL" />
-            <ErrorMessage
-              name="email"
-              component="div"
-              style={{ color: 'red' }}
-            />
-            <Field type="tel" name="telefon" placeholder="TELEFÓN" />
-            <ErrorMessage
-              name="telefon"
-              component="div"
-              style={{ color: 'red' }}
-            />
+          <div className="contactForm__container__main__and__textarea">
+            <div className="contactForm__container__main">
+              <Field type="name" name="meno" placeholder="MENO" />
+              <ErrorMessage
+                name="meno"
+                component="div"
+                style={{ color: 'red' }}
+              />
+              <Field type="email" name="email" placeholder="EMAIL" />
+              <ErrorMessage
+                name="email"
+                component="div"
+                style={{ color: 'red' }}
+              />
+              <Field type="tel" name="telefon" placeholder="TELEFÓN" />
+              <ErrorMessage
+                name="telefon"
+                component="div"
+                style={{ color: 'red' }}
+              />
+            </div>
+            <div className="contactForm__container__textarea">
+              <Field
+                name="odkaz"
+                as="textarea"
+                className="contactForm__textarea"
+                placeholder="ODKAZ"
+              />
+              <ErrorMessage
+                name="odkaz"
+                component="div"
+                style={{ color: 'red', marginLeft: '0.5em' }}
+              />
+            </div>
           </div>
-          <div className="contactForm__container__textarea">
-            <Field
-              name="odkaz"
-              as="textarea"
-              className="contactForm__textarea"
-              placeholder="ODKAZ"
-            />
-          </div>
-          <ErrorMessage name="odkaz" component="div" style={{ color: 'red' }} />
           <div className="contactForm__container__button">
             <button type="submit" disabled={isSubmitting}>
               ODOSLAŤ

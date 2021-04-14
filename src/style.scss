@@ -433,7 +433,7 @@ body {
 
 // ***********CONTACT FORM*************
 #contactForm {
-  padding-top: 2em;
+  padding-top: 5em;
   input {
     border-top-style: none;
     border-right-style: none;
@@ -442,44 +442,52 @@ body {
     background: none;
     font-family: $primary-font;
     padding: 1em;
+    font-size: 1em;
   }
 
-  input[type='textarea'] {
-    padding-bottom: 7.6em;
-    padding-right: 80%;
-    border: 2px solid #af9a7d;
+  textarea {
+    border: none;
+    resize: none;
+    background: none;
+    padding-top: 0.7em;
+    padding-left: 0.5em;
+    margin-bottom: -6px;
+    font-family: $primary-font;
+    font-size: 1em;
   }
   button {
     background: none;
     outline: none;
     border: none;
     border-bottom: 2px solid $gold-color;
-    width: 100%;
+    width: 67.3%;
+    font-family: $primary-font;
+    font-size: 1em;
   }
 }
 
+.contactForm__container__main__and__textarea {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
 .contactForm__container__main {
-  grid-area: main;
   display: flex;
   flex-direction: column;
-}
-
-.contactForm__container__textarea {
-  grid-area: textarea;
+  padding-left: 1em;
+  padding-right: 2em;
+  width: 30em;
 }
 
 .contactForm__container__button {
   display: flex;
   justify-content: center;
-  grid-area: button;
+  padding-top: 4em;
+  margin-left: 14px;
 }
-.contactForm__container {
-  padding-top: 5%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    '.  main textarea'
-    '.  button button ';
-  gap: 1em;
+
+.contactForm__container__textarea {
+  border: 2px solid #af9a7d;
+  padding-right: 1em;
+  width: 30em;
 }
