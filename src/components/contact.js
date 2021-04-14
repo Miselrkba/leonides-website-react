@@ -1,6 +1,6 @@
 import React from 'react';
 import ornamentImg from '../assets/images/svg/ornament.svg';
-import menuImg from '../assets/images/svg/menu.svg';
+import logoHead from '../assets/images/svg/logo-head.svg';
 import circleContactImg from '../assets/images/svg/bg-contact-circles.svg';
 import ContactForm from './contactForm';
 
@@ -14,7 +14,7 @@ const Contact = () => {
       />
       <div id="contact">
         <div className="contact__heading__container">
-          <img className="contact__heading__img" src={menuImg} alt="menu" />
+          <img className="contact__heading__img" src={logoHead} alt="menu" />
           <h1 className="contact__heading__title">KONTAKT</h1>
           <p>LEONIDES</p>
           <img src={ornamentImg} alt="ornament" />
