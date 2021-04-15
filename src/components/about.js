@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import ornamentImg from '../assets/images/svg/ornament.svg';
 import menuImg from '../assets/images/svg/menu.svg';
 import menuAboutImg1 from '../assets/images/menu-about-1.jpg';
@@ -26,17 +27,19 @@ const About = () => {
           <h3>HODNOTY LEONIDES</h3>
         </li>
       </ul>
-      <div className="about__images">
-        <div>
-          <img src={menuAboutImg1} alt="leonides-statue" />
+      <Fade bottom cascade>
+        <div className="about__images">
+          <div>
+            <img src={menuAboutImg1} alt="leonides-statue" />
+          </div>
+          <div>
+            <img src={menuAboutImg2} alt="skyscrapper" />
+          </div>
+          <div>
+            <img src={menuAboutImg3} alt="office-couple" />
+          </div>
         </div>
-        <div>
-          <img src={menuAboutImg2} alt="skyscrapper" />
-        </div>
-        <div>
-          <img src={menuAboutImg3} alt="office-couple" />
-        </div>
-      </div>
+      </Fade>
       <div className="about__text__container">
         <section className="about__article">
           <h3>INŠPIROVANÝ HISTÓRIOU</h3>
