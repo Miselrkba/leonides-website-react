@@ -10,6 +10,7 @@ $secondary-font-light: Myriad-Pro-Light;
 $secondary-font-lightIt: Myriad-Pro-LightIt;
 $secondary-font-It: Myriad-Pro-It;
 $gold-color: #af9a7d;
+$blue-color: #5a8cd2;
 $mainWhite: #ffff;
 $offWhite: #f7f7f7;
 $mainBlack: #222;
@@ -143,6 +144,11 @@ body {
     width: 4%;
     margin: 1em 14%;
   }
+  h3 {
+    &:hover {
+      color: $blue-color;
+    }
+  }
 }
 
 .about__images {
@@ -156,6 +162,10 @@ body {
   img {
     max-width: 100%;
     height: auto;
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0%);
+    }
   }
 }
 
@@ -311,6 +321,10 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0%);
+    }
   }
 }
 .main__grid__item1 {
@@ -375,6 +389,9 @@ body {
     font-size: 1.5em;
     color: $gold-color;
     font-family: $primary-font-light;
+    &:hover {
+      color: $blue-color;
+    }
   }
 }
 
