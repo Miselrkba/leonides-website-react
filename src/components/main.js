@@ -16,7 +16,7 @@ const Main = () => {
         <p>LEONIDES</p>
         <img src={ornamentImg} alt="ornament" />
       </div>
-      <Fade bottom cascade big duration={1200}>
+      <Fade bottom duration={1200}>
         <div className="main__grid">
           <div className="main__grid__item1">
             <h3>DETI</h3>
