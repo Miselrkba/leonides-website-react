@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import ornamentImg from '../assets/images/svg/ornament.svg';
 import logoHead from '../assets/images/svg/logo-head.svg';
 import circleContactImg from '../assets/images/svg/bg-contact-circles.svg';
@@ -19,20 +20,22 @@ const Contact = () => {
           <p>LEONIDES</p>
           <img src={ornamentImg} alt="ornament" />
         </div>
-        <div className="contact__container">
-          <h4>
-            <span className="gold--color">ADRESA</span>{' '}
-            <span>municipality in Laconia, Greece</span>{' '}
-          </h4>
-          <h4>
-            <span className="gold--color">TELEFÓN</span>{' '}
-            <span>+00421985465464</span>{' '}
-          </h4>
-          <h4>
-            <span className="gold--color">MESTO</span>{' '}
-            <span>SPARTA, GRÉCKO</span>{' '}
-          </h4>
-        </div>
+        <Fade bottom duration={1200}>
+          <div className="contact__container">
+            <h4>
+              <span className="gold--color">ADRESA</span>{' '}
+              <span>municipality in Laconia, Greece</span>{' '}
+            </h4>
+            <h4>
+              <span className="gold--color">TELEFÓN</span>{' '}
+              <span>+00421985465464</span>{' '}
+            </h4>
+            <h4>
+              <span className="gold--color">MESTO</span>{' '}
+              <span>SPARTA, GRÉCKO</span>{' '}
+            </h4>
+          </div>
+        </Fade>
         <ContactForm />
       </div>
     </>

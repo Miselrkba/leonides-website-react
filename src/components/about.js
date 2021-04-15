@@ -27,7 +27,7 @@ const About = () => {
           <h3>HODNOTY LEONIDES</h3>
         </li>
       </ul>
-      <Fade bottom cascade>
+      <Fade bottom cascade big duration={1200}>
         <div className="about__images">
           <div>
             <img src={menuAboutImg1} alt="leonides-statue" />

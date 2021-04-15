@@ -1,4 +1,5 @@
 import React from 'react';
+import Fade from 'react-reveal/Fade';
 import menuImg from '../assets/images/svg/menu.svg';
 import ornamentImg from '../assets/images/svg/ornament.svg';
 import menuneedImg1 from '../assets/images/menu-need-1.jpg';
@@ -15,32 +16,34 @@ const Main = () => {
         <p>LEONIDES</p>
         <img src={ornamentImg} alt="ornament" />
       </div>
-      <div className="main__grid">
-        <div className="main__grid__item1">
-          <h3>DETI</h3>
+      <Fade bottom cascade big duration={1200}>
+        <div className="main__grid">
+          <div className="main__grid__item1">
+            <h3>DETI</h3>
+          </div>
+          <div className="main__grid__item2">
+            <h3>BÝVANIE</h3>
+          </div>
+          <div className="main__grid__item3">
+            <h3>SPORENIE</h3>
+          </div>
+          <div className="main__grid__item4">
+            <h3>DÔCHODOK</h3>
+          </div>
+          <div className="main__grid__item5">
+            <img src={menuneedImg1} alt="children-whisper" />
+          </div>
+          <div className="main__grid__item6">
+            <img src={menuneedImg2} alt="villar" />
+          </div>
+          <div className="main__grid__item7">
+            <img src={menuneedImg3} alt="stacked-money" />
+          </div>
+          <div className="main__grid__item8">
+            <img src={menuneedImg4} alt="odler-couple" />
+          </div>
         </div>
-        <div className="main__grid__item2">
-          <h3>BÝVANIE</h3>
-        </div>
-        <div className="main__grid__item3">
-          <h3>SPORENIE</h3>
-        </div>
-        <div className="main__grid__item4">
-          <h3>DÔCHODOK</h3>
-        </div>
-        <div className="main__grid__item5">
-          <img src={menuneedImg1} alt="children-whisper" />
-        </div>
-        <div className="main__grid__item6">
-          <img src={menuneedImg2} alt="villar" />
-        </div>
-        <div className="main__grid__item7">
-          <img src={menuneedImg3} alt="stacked-money" />
-        </div>
-        <div className="main__grid__item8">
-          <img src={menuneedImg4} alt="odler-couple" />
-        </div>
-      </div>
+      </Fade>
       <div className="main__text__container">
         <section className="main__article">
           <article className="gold--color italic--font">
