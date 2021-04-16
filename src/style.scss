@@ -47,7 +47,7 @@ body {
   margin: 0;
   padding: 0;
   background: url(./assets/images/svg/bg-black.svg) no-repeat;
-  background-size: cover;
+  background-size: auto;
   @include testMixin();
   font-family: $secondary-font, sans-serif;
 }
@@ -307,11 +307,16 @@ body {
 
 // ***********HEAD*************
 #head {
+  background: url(./assets/images/svg/bg-black.svg) no-repeat;
+  background-size: cover;
+  height: 100vh;
   img {
     position: absolute;
     text-align: left;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     max-width: clamp(200px, 32%, 1000px);
-    z-index: -1;
   }
   h1 {
     font-size: 3.5em;
@@ -342,7 +347,6 @@ body {
 
 // ***********MAIN*************
 #main {
-  padding-top: 10em;
   padding-bottom: 5em;
   background: url(./assets/images/svg/bg-offer.svg) no-repeat;
   background-size: cover;
@@ -562,6 +566,11 @@ body {
 }
 
 // ***********FOOTER*************
+#footer {
+  background: url(./assets/images/svg/bg-black.svg) no-repeat;
+  background-size: cover;
+}
+
 .contact__footer__container {
   display: flex;
   flex-direction: column;

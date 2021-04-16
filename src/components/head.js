@@ -8,9 +8,9 @@ const Head = () => {
       <div className="head__container">
         <img className="head__logo__img" src={headImg} alt="head" />
         <img
+          className="head__circles__img"
           src={circleImg}
           alt="circle-needs"
-          className="head__circles__img"
         />
         <div className="head__title__container">
           <h1>LEONIDES</h1>
