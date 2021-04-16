@@ -1,4 +1,4 @@
-@use '_fonts';
+@use './styles/fonts';
 
 // *******VARIABLES********
 
@@ -59,7 +59,7 @@ body {
 
 // ***********NAVBAR*************
 #navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
 }
@@ -87,6 +87,59 @@ body {
   }
   li {
     border: none;
+  }
+}
+
+// ***********SLIDINGPANE*************
+
+// ul {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
+// li {
+//   height: 40vh;
+//   flex-grow: 1;
+// }
+
+.slidingpane__header {
+  width: 16em;
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.slidingpane__images {
+  display: flex;
+  flex-wrap: wrap;
+  p {
+    color: $gold-color;
+    border-bottom: 1px solid $gold-color;
+    width: 4em;
+  }
+  div {
+    height: 40vh;
+    flex-grow: 1;
+  }
+  @media (max-aspect-ratio: 1/1) {
+    div {
+      height: 30vh;
+    }
+  }
+  img {
+    border-radius: 50%;
+    border: 3px solid $gold-color;
+    max-height: 60%;
+    min-width: 60%;
+    object-fit: cover;
+    vertical-align: bottom;
+
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0%);
+    }
   }
 }
 
@@ -370,6 +423,7 @@ body {
   padding-bottom: 2em;
   padding-top: 2em;
   text-align: center;
+
   h3 {
     color: $gold-color;
     border-bottom: 3px solid $gold-color;
@@ -389,9 +443,6 @@ body {
     font-size: 1.5em;
     color: $gold-color;
     font-family: $primary-font-light;
-    &:hover {
-      color: $blue-color;
-    }
   }
 }
 
