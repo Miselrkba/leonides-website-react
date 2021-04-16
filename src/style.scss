@@ -316,7 +316,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    max-width: clamp(200px, 32%, 1000px);
+    max-width: clamp(318px, 32%, 1000px);
   }
   h1 {
     font-size: 3.5em;
@@ -350,7 +350,7 @@ body {
   padding-bottom: 5em;
   background: url(./assets/images/svg/bg-offer.svg) no-repeat;
   background-size: cover;
-  height: 200vh;
+  height: auto;
 }
 
 .main__heading__container {
@@ -439,6 +439,7 @@ body {
   padding: 1em;
   margin: 0 auto;
   text-align: justify;
+  padding-bottom: 1em;
   article {
     padding-bottom: 2em;
   }
