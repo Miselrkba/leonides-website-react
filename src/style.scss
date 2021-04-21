@@ -13,13 +13,6 @@ $gold-color: #af9a7d;
 $blue-color: #5a8cd2;
 $mainWhite: #ffff;
 $offWhite: #f7f7f7;
-$mainBlack: #222;
-$mainGrey: #ececec;
-$darkGrey: #cfcfcf;
-$mainTransition: all 0.3s linear;
-$mainSpacing: 3px;
-$lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
-$darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 
 // *********MAIN STYLES********
 .gold--color {
@@ -282,6 +275,16 @@ body {
     height: 100%;
     object-fit: cover;
   }
+}
+
+.gallery__image1,
+.gallery__image2,
+.gallery__image3,
+.gallery__image4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 // ***********HEAD*************
@@ -577,50 +580,48 @@ body {
 
 // ***********BOOK*************
 
-#book1 {
+@mixin bookMixin() {
   position: absolute;
   cursor: pointer;
-  background-color: $gold-color;
   opacity: 0.5;
-  width: 80%;
-  height: 80%;
+  width: 40%;
+  height: 40%;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: transform 1s, background-color 1s;
+  transition-timing-function: linear;
+
   h3 {
     color: $mainWhite;
-    font-size: 2em;
+    font-size: 1.5em;
+    padding: 1em;
+  }
+  &:hover {
+    background-color: coral;
+    opacity: 0.5;
+    transform: scale(2);
   }
 }
-#book2 {
-  position: absolute;
-  right: 25%;
+.book1 {
+  @include bookMixin();
 }
 
-@mixin bookMixin() {
-}
-.book {
-  @include bookMixin();
-}
 .book2 {
   @include bookMixin();
-  height: 10em;
+  &:hover {
+    background-color: $gold-color;
+  }
 }
 .book3 {
   @include bookMixin();
+  &:hover {
+    background-color: $gold-color;
+  }
 }
 .book4 {
   @include bookMixin();
+  &:hover {
+    background-color: coral;
+  }
 }
-
-// *****Move to gallery*****
-.gallery__image1,
-.gallery__image2,
-.gallery__image3,
-.gallery__image4 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-// *****Move to gallery*****
