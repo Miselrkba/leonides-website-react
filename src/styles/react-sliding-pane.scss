@@ -63,9 +63,7 @@
   display: flex;
   flex: 0 0 64px;
   align-items: center;
-  // background: #ebebeb;
   height: 64px;
-  // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .slide-pane__title-wrapper {
   display: flex;
@@ -77,7 +75,7 @@
 .slide-pane .slide-pane__title {
   font-size: 18px;
   font-weight: normal;
-  max-width: 80%;
+  max-width: 50%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -103,4 +101,16 @@
 .slide-pane__subtitle {
   font-size: 12px;
   margin-top: 2px;
+}
+
+// take up 100% of the screen on mobile devices
+.slide-pane {
+  width: 100% !important;
+}
+
+// take up 100% of the screen on devices over 850px
+@media (min-width: 850px) {
+  .slide-pane {
+    width: 50% !important;
+  }
 }

@@ -28,33 +28,38 @@ const Navbar = () => {
         closeIcon={<CloseIcon />}
         isOpen={state.isPaneOpenLeft}
         from="left"
-        width="50%"
         onRequestClose={() => setState({ isPaneOpenLeft: false })}
       >
         <div className="slidingpane__images">
           <div className="slidingpane__images__container">
             <img src={slideMenuImg1} alt="children-whisper" />
             <p>I1</p>
+            <span>MENU ITEM1</span>
           </div>
           <div className="slidingpane__images__container">
             <img src={slideMenuImg2} alt="villar" />
             <p>I2</p>
+            <span>MENU ITEM2</span>
           </div>
           <div className="slidingpane__images__container">
             <img src={slideMenuImg3} alt="stacked-money" />
             <p>I3</p>
+            <span>MENU ITEM3</span>
           </div>
           <div className="slidingpane__images__container">
             <img src={slideMenuImg4} alt="odler-couple" />
             <p>I4</p>
+            <span>MENU ITEM4</span>
           </div>
           <div className="slidingpane__images__container">
             <img src={slideMenuImg5} alt="odler-couple" />
             <p>I5</p>
+            <span>MENU ITEM5</span>
           </div>
           <div className="slidingpane__images__container">
             <img src={slideMenuImg6} alt="odler-couple" />
             <p>I6</p>
+            <span>MENU ITEM6</span>
           </div>
         </div>
       </SlidingPane>

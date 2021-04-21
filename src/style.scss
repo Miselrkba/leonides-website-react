@@ -49,9 +49,7 @@ body {
 .navbar__ul {
   display: flex;
   justify-content: space-around;
-
   padding: 1em;
-
   li {
     border-top: 1px solid $gold-color;
     width: 3%;
@@ -91,6 +89,10 @@ body {
     color: $gold-color;
     border-bottom: 1px solid $gold-color;
     width: 4em;
+    margin-bottom: 3px;
+  }
+  span {
+    color: $gold-color;
   }
   div {
     height: 40vh;
@@ -108,11 +110,22 @@ body {
     min-width: 60%;
     object-fit: cover;
     vertical-align: bottom;
-
+    cursor: pointer;
     filter: grayscale(100%);
     &:hover {
       filter: grayscale(0%);
     }
+  }
+}
+
+// ******RESPONSIVNESS***********
+@media (min-width: 550px) {
+  li  {
+  }
+}
+// everything over 850px
+@media (min-width: 850px) {
+  li  {
   }
 }
 
@@ -185,7 +198,6 @@ body {
       color: $blue-color;
     }
   }
-
   img {
     max-height: 25em;
     filter: grayscale(100%);
