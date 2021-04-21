@@ -188,6 +188,9 @@ body {
     width: 4em;
     padding-bottom: 1em;
     font-size: 1.5em;
+    &:hover {
+      color: $blue-color;
+    }
   }
 
   img {
@@ -407,6 +410,9 @@ body {
   h3 {
     color: $gold-color;
     border-bottom: 3px solid $gold-color;
+    &:hover {
+      color: $blue-color;
+    }
   }
 }
 
