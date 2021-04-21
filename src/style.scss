@@ -34,6 +34,10 @@ ul {
   font-family: $secondary-font-It;
 }
 
+h3 {
+  font-family: $primary-font-light;
+}
+
 @mixin testMixin() {
 }
 
@@ -189,6 +193,8 @@ body {
     margin: 1em 14%;
   }
   h3 {
+    font-weight: bold;
+    font-size: 1.5em;
     &:hover {
       color: $blue-color;
     }
@@ -213,12 +219,43 @@ body {
   }
 }
 
+.slidingpane__images {
+  display: flex;
+  flex-wrap: wrap;
+  p {
+    color: $gold-color;
+    border-bottom: 1px solid $gold-color;
+    width: 4em;
+  }
+  div {
+    height: 40vh;
+    flex-grow: 1;
+  }
+  @media (max-aspect-ratio: 1/1) {
+    div {
+      height: 30vh;
+    }
+  }
+  img {
+    border-radius: 50%;
+    border: 3px solid $gold-color;
+    max-height: 60%;
+    min-width: 60%;
+    object-fit: cover;
+    vertical-align: bottom;
+
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+}
+
 .about__article,
 .about__values,
 .about__history {
   h3 {
     color: $gold-color;
-    font-family: $primary-font-light;
   }
 }
 
@@ -438,7 +475,6 @@ body {
     margin-bottom: 0.3em;
     font-size: 1.5em;
     color: $gold-color;
-    font-family: $primary-font-light;
   }
 }
 
@@ -528,6 +564,10 @@ body {
     width: 67.3%;
     font-family: $primary-font;
     font-size: 1em;
+    transition: border 0.1s linear;
+    &:hover {
+      border-bottom: 4px solid $gold-color;
+    }
   }
 }
 
@@ -595,7 +635,6 @@ body {
   align-items: center;
   h3 {
     color: $mainWhite;
-    font-family: $primary-font-light;
     font-size: 2em;
   }
 }
