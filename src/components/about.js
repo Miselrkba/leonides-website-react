@@ -16,30 +16,24 @@ const About = () => {
         <p>LEONIDES</p>
         <img src={ornamentImg} alt="ornament" />
       </div>
-      <ul className="about__ul gold--color">
-        <li>
-          <h3>INŠPIROVANÝ HISTÓRIOU</h3>
-        </li>
-        <li>
-          <h3>VÍZIA A POSLANIE</h3>
-        </li>
-        <li>
-          <h3>HODNOTY LEONIDES</h3>
-        </li>
-      </ul>
-      <Fade bottom duration={1200}>
-        <div className="about__images">
-          <div>
-            <img src={menuAboutImg1} alt="leonides-statue" />
+      <div className="about__images__container">
+        <Fade bottom duration={1200}>
+          <div className="about__images">
+            <div className="about__images__container">
+              <h3>INŠPIROVANÝ HISTÓRIOU</h3>
+              <img src={menuAboutImg1} alt="leonides-statue" />
+            </div>
+            <div className="about__images__container">
+              <h3>VÍZIA A POSLANIE</h3>
+              <img src={menuAboutImg2} alt="skyscrapper" />
+            </div>
+            <div className="about__images__container">
+              <h3>HODNOTY LEONIDES</h3>
+              <img src={menuAboutImg3} alt="office-couple" />
+            </div>
           </div>
-          <div>
-            <img src={menuAboutImg2} alt="skyscrapper" />
-          </div>
-          <div>
-            <img src={menuAboutImg3} alt="office-couple" />
-          </div>
-        </div>
-      </Fade>
+        </Fade>
+      </div>
       <div className="about__text__container">
         <section className="about__article">
           <h3>INŠPIROVANÝ HISTÓRIOU</h3>

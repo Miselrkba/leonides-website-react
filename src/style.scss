@@ -38,27 +38,13 @@ h3 {
   font-family: $primary-font-light;
 }
 
-@mixin testMixin() {
-}
-
-%panel {
-  color: blue;
-  border: 2px solid red;
-}
-
 body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   background: url(./assets/images/svg/bg-black.svg) no-repeat;
   background-size: auto;
-  @include testMixin();
   font-family: $secondary-font, sans-serif;
-}
-
-.small-panel {
-  @extend %panel;
-  font-size: 1.5em;
 }
 
 // ***********NAVBAR*************
@@ -171,6 +157,7 @@ body {
   align-items: center;
   background: url(./assets/images/svg/header-about.svg) no-repeat center;
   padding-top: 2em;
+  padding-bottom: 5em;
   h1 {
     font-family: $primary-font-bold;
     margin-bottom: -0.4em;
@@ -182,68 +169,29 @@ body {
     letter-spacing: 0.3em;
   }
 }
-
-.about__ul {
-  display: flex;
-  align-items: center;
-
-  li {
-    border-bottom: 3px solid $gold-color;
-    width: 4%;
-    margin: 1em 14%;
-  }
-  h3 {
-    font-weight: bold;
-    font-size: 1.5em;
-    &:hover {
-      color: $blue-color;
-    }
-  }
+.about__images__container {
+  padding-bottom: 2em;
 }
-
 .about__images {
   display: flex;
-  justify-content: space-evenly;
-  margin: 3em 0;
-  div {
-    width: 11em;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-    filter: grayscale(100%);
-    &:hover {
-      filter: grayscale(0%);
-    }
-  }
-}
-
-.slidingpane__images {
-  display: flex;
   flex-wrap: wrap;
-  p {
+  align-items: center;
+  justify-content: space-between;
+  max-width: 64em;
+  padding: 0 1em;
+  margin: 0 auto;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  h3 {
     color: $gold-color;
-    border-bottom: 1px solid $gold-color;
+    border-bottom: 3px solid $gold-color;
     width: 4em;
+    padding-bottom: 1em;
+    font-size: 1.5em;
   }
-  div {
-    height: 40vh;
-    flex-grow: 1;
-  }
-  @media (max-aspect-ratio: 1/1) {
-    div {
-      height: 30vh;
-    }
-  }
-  img {
-    border-radius: 50%;
-    border: 3px solid $gold-color;
-    max-height: 60%;
-    min-width: 60%;
-    object-fit: cover;
-    vertical-align: bottom;
 
+  img {
+    max-height: 25em;
     filter: grayscale(100%);
     &:hover {
       filter: grayscale(0%);
