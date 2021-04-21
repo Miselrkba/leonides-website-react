@@ -93,6 +93,9 @@ body {
   }
   span {
     color: $gold-color;
+    &:hover {
+      color: $blue-color;
+    }
   }
   div {
     height: 40vh;
@@ -115,17 +118,6 @@ body {
     &:hover {
       filter: grayscale(0%);
     }
-  }
-}
-
-// ******RESPONSIVNESS***********
-@media (min-width: 550px) {
-  li  {
-  }
-}
-// everything over 850px
-@media (min-width: 850px) {
-  li  {
   }
 }
 
@@ -199,7 +191,7 @@ body {
     }
   }
   img {
-    max-height: 25em;
+    height: 15em;
     filter: grayscale(100%);
     &:hover {
       filter: grayscale(0%);
@@ -253,6 +245,24 @@ body {
     width: clamp(4em, 13em, 20em);
     position: relative;
     bottom: 12em;
+  }
+}
+
+// ******ABOUT RESPONSIVNESS***********
+// everything over 550px
+@media (min-width: 550px) {
+  .about__images {
+    img {
+      height: 20em;
+    }
+  }
+}
+// everything over 850px
+@media (min-width: 850px) {
+  .about__images {
+    img {
+      height: 25em;
+    }
   }
 }
 
