@@ -92,16 +92,6 @@ body {
 
 // ***********SLIDINGPANE*************
 
-// ul {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-
-// li {
-//   height: 40vh;
-//   flex-grow: 1;
-// }
-
 .slidingpane__header {
   width: 16em;
   img {
@@ -160,7 +150,7 @@ body {
 #logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 3%;
+  padding-bottom: 3em;
 }
 
 // ***********ABOUT*************
@@ -168,6 +158,7 @@ body {
   background: url(./assets/images/svg/_bg-about.svg) no-repeat;
   background-size: cover;
   height: auto;
+  padding-bottom: 3em;
 }
 
 .about__heading__container {
@@ -233,7 +224,7 @@ body {
 
 .about__text__container {
   max-width: 64em;
-  padding: 1em;
+  padding: 0 1em;
   margin: 0 auto;
   text-align: justify;
   article {
@@ -589,3 +580,54 @@ body {
 .contact__footer__ornament {
   padding-bottom: 0.5em;
 }
+
+// ***********BOOK*************
+
+#book1 {
+  position: absolute;
+  cursor: pointer;
+  background-color: $gold-color;
+  opacity: 0.5;
+  width: 80%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    color: $mainWhite;
+    font-family: $primary-font-light;
+    font-size: 2em;
+  }
+}
+#book2 {
+  position: absolute;
+  right: 25%;
+}
+
+@mixin bookMixin() {
+}
+.book {
+  @include bookMixin();
+}
+.book2 {
+  @include bookMixin();
+  height: 10em;
+}
+.book3 {
+  @include bookMixin();
+}
+.book4 {
+  @include bookMixin();
+}
+
+// *****Move to gallery*****
+.gallery__image1,
+.gallery__image2,
+.gallery__image3,
+.gallery__image4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+// *****Move to gallery*****
