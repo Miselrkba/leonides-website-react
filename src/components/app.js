@@ -17,12 +17,12 @@ const App = () => {
     <>
       <Navbar />
       <Hero />
-      <Logo />
-      <About />
-      <Gallery />
-      <Head />
-      <Main />
       <Suspense fallback={<Fallback />}>
+        <Logo />
+        <About />
+        <Gallery />
+        <Head />
+        <Main />
         <Maps />
       </Suspense>
       <Contact />
