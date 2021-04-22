@@ -7,6 +7,7 @@ import menuAboutImg2 from '../assets/images/menu-about-2.jpg';
 import menuAboutImg3 from '../assets/images/menu-about-3.jpg';
 import menuAboutImg4 from '../assets/images/money copy.png';
 
+// images are wraped in fade animation to play once
 const About = () => {
   return (
     <div id="about">

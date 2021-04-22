@@ -7,6 +7,7 @@ import menuneedImg2 from '../assets/images/menu-need-2.jpg';
 import menuneedImg3 from '../assets/images/menu-need-3.jpg';
 import menuneedImg4 from '../assets/images/menu-need-4.jpg';
 
+// fade is the fade animation when scrolling down - playes once
 const Main = () => {
   return (
     <div id="main">

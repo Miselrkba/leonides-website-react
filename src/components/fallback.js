@@ -1,5 +1,6 @@
 import React from 'react';
 
+// falback component to show while page is being loaded
 const fallback = () => {
   return (
     <div id="fallback">

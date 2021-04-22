@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
+// contact form with form validation and specific schema
 const ContactForm = () => (
   <div id="contactForm">
     <Fade bottom delay={200} duration={1200}>

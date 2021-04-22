@@ -10,6 +10,7 @@ import slideMenuImg4 from '../assets/images/menu-04.jpg';
 import slideMenuImg5 from '../assets/images/menu-05.jpg';
 import slideMenuImg6 from '../assets/images/menu-06.jpg';
 
+// icon component for sliding panel
 const CloseIcon = () => {
   return (
     <div className="slidingpane__header">
@@ -19,6 +20,7 @@ const CloseIcon = () => {
   );
 };
 
+// navbar with sliding panel. State to handle opening / closing of side panel
 const Navbar = () => {
   const [state, setState] = useState({ isPaneOpenLeft: false });
 

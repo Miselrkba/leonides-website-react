@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
+// map container shows the location of Sparta in Greece
 const Maps = () => {
   return (
     <div id="maps">
