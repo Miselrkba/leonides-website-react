@@ -8,12 +8,13 @@ import Logo from './logo';
 import Main from './main';
 import Navbar from './navbar';
 import Footer from './footer';
+import Fallback from './fallback';
 
 const Maps = lazy(() => import('./maps'));
 
 const App = () => {
   return (
-    <div className="app">
+    <>
       <Navbar />
       <Hero />
       <Logo />
@@ -21,12 +22,12 @@ const App = () => {
       <Gallery />
       <Head />
       <Main />
-      <Suspense fallback={<h1>loading maps …</h1>}>
+      <Suspense fallback={<Fallback />}>
         <Maps />
       </Suspense>
       <Contact />
       <Footer />
-    </div>
+    </>
   );
 };
 

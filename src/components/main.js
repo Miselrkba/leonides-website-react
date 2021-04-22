@@ -12,7 +12,7 @@ const Main = () => {
     <div id="main">
       <div className="main__heading__container">
         <img className="main__heading__img" src={menuImg} alt="menu" />
-        <h1 className="main__heading__title">PORTEBY ĽUDÍ</h1>
+        <h1 className="main__heading__title">POTREBY ĽUDÍ</h1>
         <p>LEONIDES</p>
         <img src={ornamentImg} alt="ornament" />
       </div>
